@@ -1,4 +1,4 @@
-= COMUNDA Portal
+## Welcome to COMUNDA
 
 The COMUNDA portal is a place for security and network researchers to
 access datasets shared
