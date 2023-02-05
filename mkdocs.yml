@@ -10,8 +10,9 @@ nav:
 - Welcome to COMUNDA: index.md
 - Glossary: glossary.md
 - Opening Account: account.md
-- Searching for Datasets: dataset.md
-- Interacting with Datasets: request.md
+- Interacting With Datasets: dataset.md
+  - Requesting Datasets: request.md
+  - Correcting Labels: labels.md
 - Support: support.md
 
 markdown_extensions:
