@@ -2,6 +2,7 @@
 
 COMUNDA does not support stand-alone authentication. Instead, you can choose
 one of three third-party authentication services:
+
 * CILogon (log in with your institutional account)
 * Github
 * Google

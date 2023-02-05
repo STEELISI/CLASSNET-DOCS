@@ -1,6 +1,7 @@
 ## Interacting with Datasets
 
 There are several actions you can take to interact with datasets:
+
 * Search for datasets - this is enabled both for users that are not logged in
 and for logged in users. You can search using keywords, type of dataset and
 the dataset provider's organization. Search results are displayed in a short
