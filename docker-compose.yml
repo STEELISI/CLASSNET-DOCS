@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+
+ docs:
+    image: docs
+    container_name: docs
+    restart: always
+    volumes:
+      - ./_site:/usr/src/app/_site
+    build:
+      context: .
+      dockerfile: Dockerfile

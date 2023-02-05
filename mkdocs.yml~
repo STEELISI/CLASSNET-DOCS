@@ -1,0 +1,21 @@
+site_name: COMUNDA Documentation
+site_description: User documentation for the COMUNDA portal
+theme:
+    name: readthedocs
+    custom_dir: readthedocs_custom
+site_dir: '_site'
+extra_css: [css/extra.css]
+
+nav:
+- Welcome to COMUNDA: index.md
+- Glossary: Glossary.md
+- Opening Account: account.md
+- Searching for Datasets: dataset.md
+- Interacting with Datasets: request.md
+- Support: support.md
+
+markdown_extensions:
+    - attr_list
+    - toc:
+        permalink: 
+    - admonition:
