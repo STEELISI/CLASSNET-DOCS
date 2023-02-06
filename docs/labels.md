@@ -45,11 +45,11 @@ for your labels. Name that folder in a way that denotes your or your research
 group's identity and the purpose of the labels, e.g., JMirkovic-ddos-attack
 * Place the following information and files into the folder:
 
-** Your name and contact information in README.md file
-** The label format in README.md file. Make sure to explain each label's meaning.
-** The label file if any (sometimes the labeling program may take input needed to label, without the label file)
-** The program, which can be ran on the given dataset to produce some unique record ID and the desired label. This program may take input from command line or take label file as input.
-** Provide examples how to run the program (and specific inputs) to label the given dataset
+  * Your name and contact information in README.md file
+  * The label format in README.md file. Make sure to explain each label's meaning.
+  * The label file if any (sometimes the labeling program may take input needed to label, without the label file)
+  * The program, which can be ran on the given dataset to produce some unique record ID and the desired label. This program may take input from command line or take label file as input.
+  * Provide examples how to run the program (and specific inputs) to label the given dataset
 
 For example, if I were to label DDoS attacks on the large dataset containing Netflow records, I may choose to have labels in the format of attack events, e.g., start time of attack in UTC, stop time of attack in UTC, target, type of attack or attack traffic's signature, I would specify this format in the README.md file, and list the types of attacks I can label. I would place the events into the label file. I would also provide a program, which reads Netflow records and my label file, and prints a unique record ID (timestamp-sourceIP-sourceport-destIP-destport) and the label out. I would put the full example of the command line needed to run my program in README.md
 
