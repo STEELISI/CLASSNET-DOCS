@@ -23,7 +23,7 @@ git checkout -b your-chosen-name
 ```
 git commit -a -m 'some message here' && git push origin your-chosen-name
 ```
-* Go to https://github.com/STEELISI/COMUNDA and submit a pull request. Make
+* Go to [COMUNDA Github](https://github.com/STEELISI/COMUNDA) and submit a pull request. Make
 sure to offer a detailed explanation in your request about the reasoning
 for the corrections you suggested.
 
@@ -57,6 +57,6 @@ For example, if I were to label DDoS attacks on the large dataset containing Net
 ```
 git commit -a -m 'some message here' && git push origin your-chosen-name
 ```
-* Go to https://github.com/STEELISI/COMUNDA and submit a pull request. Make
+* Go to [COMUNDA Github](https://github.com/STEELISI/COMUNDA) and submit a pull request. Make
 sure to offer a detailed explanation in your request about the reasoning
 for the labels you suggested and the labeling algorithm you implemented.
