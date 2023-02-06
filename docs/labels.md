@@ -44,6 +44,7 @@ git checkout -b your-chosen-name
 for your labels. Name that folder in a way that denotes your or your research
 group's identity and the purpose of the labels, e.g., JMirkovic-ddos-attack
 * Place the following information and files into the folder:
+
 ** Your name and contact information in README.md file
 ** The label format in README.md file. Make sure to explain each label's meaning.
 ** The label file if any (sometimes the labeling program may take input needed to label, without the label file)
