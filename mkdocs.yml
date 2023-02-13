@@ -1,8 +1,8 @@
 site_name: COMUNDA Documentation
 site_description: User documentation for the COMUNDA portal
 theme:
-    logo: img/doc-logo.png
-    favicon: img/comunda-favicon.ico
+    logo: ../img/doc-logo.png
+    favicon: ../img/comunda-favicon.ico
     name: readthedocs
     custom_dir: readthedocs_custom
 site_dir: '_site'
