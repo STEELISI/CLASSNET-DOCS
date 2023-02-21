@@ -33,7 +33,7 @@ for the corrections you suggested.
 
 #### Giving us a URL
 
-On [COMUNDA Web page](https://comunda.isi.edu) log in and then follow *Update Labels* link on
+On [COMUNDA Web page](https://comunda.isi.edu) log in and then follow *Label Datasets* link on
 the left. This will enable you to provide us a URL with materials describing your label correction.
 Please make sure to provide at the URL site:
 
@@ -81,7 +81,7 @@ for the labels you suggested and the labeling algorithm you implemented.
 
 #### Giving us a URL
 
-On [COMUNDA Web page](https://comunda.isi.edu) log in and then follow *Update Labels* link on
+On [COMUNDA Web page](https://comunda.isi.edu) log in and then follow *Label Datasets* link on
 the left. This will enable you to provide us a URL with materials describing your new labels.
 Please make sure to provide at the URL site:
 
