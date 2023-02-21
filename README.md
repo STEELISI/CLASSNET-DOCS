@@ -1,6 +1,6 @@
 - Apply your changes to documentation in this folder and commit and push
 - First time, run `docker-compose up -d --build`
-- Run `docker-exec -it docs bash`
+- Run `docker exec -it docs bash`
 - Within docker clone the current repo and build new docs
   ```
   git clone https://github.com/STEELISI/CLASSNET-DOCS.git
