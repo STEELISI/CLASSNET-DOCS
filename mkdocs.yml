@@ -13,7 +13,8 @@ nav:
 - Interacting With Datasets:
   - Searching, viewing and rating: dataset.md
   - Requesting Datasets: request.md
-  - Correcting Labels: labels.md
+  - Updating Labels: labels.md
+  - Contributing Datasets: contribute.md
 - Help:
   - Support: support.md
 
