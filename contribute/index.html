@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Searching, viewing and rating - COMUNDA Documentation</title>
+    <title>Contributing Datasets - COMUNDA Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Searching, viewing and rating";
-        var mkdocs_page_input_path = "dataset.md";
+        var mkdocs_page_name = "Contributing Datasets";
+        var mkdocs_page_input_path = "contribute.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -52,15 +52,21 @@
               </ul>
               <p class="caption"><span class="caption-text">Interacting With Datasets</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Searching, viewing and rating</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../dataset/">Searching, viewing and rating</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../request/">Requesting Datasets</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../labels/">Updating Labels</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contributing Datasets</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Contributing Datasets</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-sharing">Mechanisms for Sharing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-researcher-access-approval">Mechanisms for Researcher Access Approval</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-data-access">Mechanisms for Data Access</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Help</span></p>
@@ -83,7 +89,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>Interacting With Datasets &raquo;</li>
-      <li>Searching, viewing and rating</li>
+      <li>Contributing Datasets</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -92,24 +98,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="interacting-with-datasets">Interacting with Datasets<a class="headerlink" href="#interacting-with-datasets" title="Permanent link"></a></h2>
-<p>There are several actions you can take to interact with datasets:</p>
+                <h2 id="contributing-datasets">Contributing Datasets<a class="headerlink" href="#contributing-datasets" title="Permanent link"></a></h2>
+<p>If you or your organization have datasets, which you would like to distribute
+via our portal, please contact us via <a href="mailto:comunda-ops@googlegroups.com">comunda-ops@googlegroups.com</a>.</p>
+<h3 id="mechanisms-for-sharing">Mechanisms for Sharing<a class="headerlink" href="#mechanisms-for-sharing" title="Permanent link"></a></h3>
+<p>We can host only your metadata for each dataset, or we can host your dataset and its metadata.
+You would provide the Data Use Agreement (DUA), outlining acceptable use of your
+dataset by researchers.</p>
+<h3 id="mechanisms-for-researcher-access-approval">Mechanisms for Researcher Access Approval<a class="headerlink" href="#mechanisms-for-researcher-access-approval" title="Permanent link"></a></h3>
+<p>Once a researcher submits the request for a dataset, and the signed DUA, that request
+is routed for approval via email. You can decide who should be in charge of request
+approvals, e.g., someone from CLASSNET project or someone from your organization. You can
+also designate multiple approvers. You can further decide what is <em>your criteria</em> for
+approval, e.g., do you want to allow access only to researchers from some countries, or
+only to faculty but not students, etc. Once the request is approved, the researcher
+will receive an email with instructions how to access data.</p>
+<h3 id="mechanisms-for-data-access">Mechanisms for Data Access<a class="headerlink" href="#mechanisms-for-data-access" title="Permanent link"></a></h3>
+<p>Currently we support three types of data access:</p>
 <ul>
-<li>Search for datasets - this is enabled both for users that are not logged in
-and for logged in users. You can search using keywords, type of dataset and
-the dataset provider's organization. Search results are displayed in a short
-form. You can click on "View" at the bottom right to see expanded results.</li>
-<li><a href="../request/">Request a dataset</a> - if you identify a dataset of interest to
-your research, you can request it. Usually this takes a few days for the request to be vetted and processed. Requests for datasets from the same provider or in the same category may be expedited on our end.</li>
-<li>Review and rate the dataset - you can input positive or negative reviews and rating for any dataset, which you have previously requested. Please be respectful of data providers and use objective, professional language in your reviews.</li>
-<li><a href="../labels/">Share your labels and label corrections</a> - some datasets will be accompanied by labels, e.g., denoting benign and malicious traffic. You can submit corrections to these labels, or even submit your own, alternative approach to labeling a given dataset.</li>
+<li>download - researcher obtains a link to download the dataset</li>
+<li>onsite - researcher obtains login credentials to log into a machine, usually at the data
+provider's site, to access and process the data</li>
+<li>cloud - researcher obtains information how to access the dataset on a cloud</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../account/" class="btn btn-neutral float-left" title="Opening Account"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../request/" class="btn btn-neutral float-right" title="Requesting Datasets">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../labels/" class="btn btn-neutral float-left" title="Updating Labels"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../support/" class="btn btn-neutral float-right" title="Support">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -132,10 +149,10 @@ your research, you can request it. Usually this takes a few days for the request
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../account/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../labels/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../request/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../support/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Correcting Labels - COMUNDA Documentation</title>
+    <title>Updating Labels - COMUNDA Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Correcting Labels";
+        var mkdocs_page_name = "Updating Labels";
         var mkdocs_page_input_path = "labels.md";
         var mkdocs_page_url = null;
       </script>
@@ -56,13 +56,27 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../request/">Requesting Datasets</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Correcting Labels</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Updating Labels</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#correcting-a-few-labels">Correcting a Few Labels</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#github-interaction">Github interaction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#giving-us-a-url">Giving us a URL</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#share-new-labels">Share New Labels</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#github-interaction_1">Github interaction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#giving-us-a-url_1">Giving us a URL</a>
+    </li>
+        </ul>
     </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contributing Datasets</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Help</span></p>
@@ -85,7 +99,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>Interacting With Datasets &raquo;</li>
-      <li>Correcting Labels</li>
+      <li>Updating Labels</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -101,6 +115,8 @@ researchers may want to offer a correction to our official label, or a new way
 to assign labels, or even
 to propose a new set of labels to denote new features of flows, hosts or events. Please follow the instructions below to correct or share labels.</p>
 <h3 id="correcting-a-few-labels">Correcting a Few Labels<a class="headerlink" href="#correcting-a-few-labels" title="Permanent link"></a></h3>
+<p>You can make corrections by interacting with Github or by giving us a URL with the corrected labels.</p>
+<h4 id="github-interaction">Github interaction<a class="headerlink" href="#github-interaction" title="Permanent link"></a></h4>
 <ul>
 <li>Check out the public repository for labels:</li>
 </ul>
@@ -124,7 +140,17 @@ where our official labels reside</li>
 sure to offer a detailed explanation in your request about the reasoning
 for the corrections you suggested.</li>
 </ul>
+<h4 id="giving-us-a-url">Giving us a URL<a class="headerlink" href="#giving-us-a-url" title="Permanent link"></a></h4>
+<p>On <a href="https://comunda.isi.edu">COMUNDA Web page</a> log in and then follow <em>Update Labels</em> link on
+the left. This will enable you to provide us a URL with materials describing your label correction.
+Please make sure to provide at the URL site:</p>
+<ul>
+<li>Reason for correction</li>
+<li>File with corrected labels and unique record IDs (ideally corrected labels would be in the format that the original labels were)</li>
+</ul>
 <h3 id="share-new-labels">Share New Labels<a class="headerlink" href="#share-new-labels" title="Permanent link"></a></h3>
+<p>You can make corrections by interacting with Github or by giving us a URL with the new labels.</p>
+<h4 id="github-interaction_1">Github interaction<a class="headerlink" href="#github-interaction_1" title="Permanent link"></a></h4>
 <ul>
 <li>Check out the public repository for labels:</li>
 </ul>
@@ -166,12 +192,23 @@ group's identity and the purpose of the labels, e.g., JMirkovic-ddos-attack</li>
 sure to offer a detailed explanation in your request about the reasoning
 for the labels you suggested and the labeling algorithm you implemented.</li>
 </ul>
+<h4 id="giving-us-a-url_1">Giving us a URL<a class="headerlink" href="#giving-us-a-url_1" title="Permanent link"></a></h4>
+<p>On <a href="https://comunda.isi.edu">COMUNDA Web page</a> log in and then follow <em>Update Labels</em> link on
+the left. This will enable you to provide us a URL with materials describing your new labels.
+Please make sure to provide at the URL site:</p>
+<ul>
+<li>Your name and contact information in README.md file</li>
+<li>The label format in README.md file. Make sure to explain each label's meaning.</li>
+<li>The label file if any (sometimes the labeling program may take input needed to label, without the label file)</li>
+<li>The program, which can be ran on the given dataset to produce some unique record ID and the desired label. This program may take input from command line or take label file as input. If label file lists each record's unique ID and the label, then the program can be omitted.</li>
+<li>Provide examples how to run the program (and specific inputs) to label the given dataset. Again, if label file fully specifies the label for each record, the examples can be omitted</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../request/" class="btn btn-neutral float-left" title="Requesting Datasets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../support/" class="btn btn-neutral float-right" title="Support">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../contribute/" class="btn btn-neutral float-right" title="Contributing Datasets">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -197,7 +234,7 @@ for the labels you suggested and the labeling algorithm you implemented.</li>
       <span><a href="../request/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../support/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../contribute/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
