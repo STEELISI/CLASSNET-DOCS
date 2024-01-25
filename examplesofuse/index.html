@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Examples of Use - COMUNDA Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Examples of Use";
+    var mkdocs_page_input_path = "examplesofuse.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">COMUNDA Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Overview</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Welcome to COMUNDA</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../account/">Opening Account</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Interacting With Datasets</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../dataset/">Searching, viewing and rating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../request/">Requesting Datasets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../labels/">Updating Labels</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contributing Datasets</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Examples of Use</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ddos-hackathon-2020">DDoS Hackathon 2020</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-select-training-and-testing-data">Step 1: Select training and testing data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-labeling-the-records-using-event-labels">Step 2: Labeling the records using event labels</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-mining-the-features-for-learning">Step 3: Mining the features for learning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-running-ml-algorithms-on-the-data">Step 4: Running ML algorithms on the data</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Help</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../support/">Support</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">COMUNDA Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Interacting With Datasets &raquo;</li>
+        
+      
+    
+    <li>Examples of Use</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="examples-of-use">Examples of Use<a class="headerlink" href="#examples-of-use" title="Permanent link"></a></h2>
+<p>This page provides examples how labeled datasets can be used and why
+having multiple labels for a dataset may benefit researchers.</p>
+<h3 id="ddos-hackathon-2020">DDoS Hackathon 2020<a class="headerlink" href="#ddos-hackathon-2020" title="Permanent link"></a></h3>
+<p>In 2020, we organized a hackathon at ACM Sigcomm to label DDoS attacks
+in FrontRange GigaPop datasets. These datasets can be requested from our
+portal (search for "hackathon"). The datasets contain two types of labels:
+the original labels from Peakflow appliance, and the labels proposed
+by USC/ISI that align start and stop time of attacks to match the rise
+and fall of anomalous traffic, reported by Peakflow. For example, if
+DNS responses to target T started to rise at 10 am, and Peakflow detected
+the attack at 10:05 am, USC/ISI labels would show 10 am as the attack
+start. Since there is no ground truth data for these attacks, it may be
+difficult for researchers to justify use of one set of labels over the other.
+Instead, we hope that researchers may benefit from reporting their results
+over multiple labels.</p>
+<p>You can simply read over the first three steps and then run the demo in the
+fourth step in Google Colab. Or, if you want to redo our steps from scratch
+you 
+can request and
+download the hackathon
+dataset from <a href="https://comunda.isi.edu/artifact/view/2383">our COMUNDA portal</a>.
+You will also need labels for this dataset, which can be obtained from
+<a href="https://github.com/STEELISI/COMUNDA/tree/main/ddos_hackathon-20200511">this link</a> by cloning the repository:</p>
+<pre><code>   git clone https://github.com/STEELISI/COMUNDA.git
+</code></pre>
+
+<h4 id="step-1-select-training-and-testing-data">Step 1: Select training and testing data<a class="headerlink" href="#step-1-select-training-and-testing-data" title="Permanent link"></a></h4>
+<p>For this example we used 1 hour of data on May 12, 2020, i.e., files named
+nfcapd.2020051202<em> for training and 1 hour of data on Sep 14, 2020, i.e., files
+named nfcapd.2020091423</em> for testing. We chose to separate training and
+testing data in time to mimic the actual DDoS detection where past traffic
+and attacks inform future detection. The chosen data contains several attacks.</p>
+<p>Copy the training data into a folder called <code>train</code> and testing data into a
+folder called <code>test</code>.</p>
+<h4 id="step-2-labeling-the-records-using-event-labels">Step 2: Labeling the records using event labels<a class="headerlink" href="#step-2-labeling-the-records-using-event-labels" title="Permanent link"></a></h4>
+<p>To label the records we ran the following commands (assuming the data and the labels were all stored in one common directory and the command is ran there as well). <strong>Note: they may take up to one hour per command, depending on your disk and
+CPU speed. They each produce 1.3-1.5GB files.</strong></p>
+<pre><code>   perl tag_flows.pl train ddos_hackathon-20200511/provider-peakflow/may &gt; train_peak_labeled.txt
+   perl tag_flows.pl train ddos_hackathon-20200511/uscisi/may &gt; train_uscisi_labeled.txt
+   perl tag_flows.pl test ddos_hackathon-20200511/provider-peakflow/sep &gt; test_peak_labeled.txt
+   perl tag_flows.pl test ddos_hackathon-20200511/uscisi/sep &gt; test_uscisi_labeled.txt  
+</code></pre>
+
+<p>Note that <code>tag_flows.pl</code> can be obtained from <a href="https://github.com/STEELISI/COMUNDA">COMUNDA repository</a> from folder <code>tools/usc-isi/netflow-ddos</code>. </p>
+<h4 id="step-3-mining-the-features-for-learning">Step 3: Mining the features for learning<a class="headerlink" href="#step-3-mining-the-features-for-learning" title="Permanent link"></a></h4>
+<p>To mine the features for learning we ran the following commands:</p>
+<pre><code>    perl mine_features.pl train_peak_labeled.txt &gt; train_peak.csv
+    perl mine_features.pl test_peak_labeled.txt &gt; test_peak.csv
+    perl mine_features.pl train_uscisi_labeled.txt &gt; train_uscisi.csv
+    perl mine_features.pl test_uscisi_labeled.txt &gt; test_uscisi.csv
+</code></pre>
+
+<p>We then saved the csv files online, so they could be used in Google Colab.</p>
+<h4 id="step-4-running-ml-algorithms-on-the-data">Step 4: Running ML algorithms on the data<a class="headerlink" href="#step-4-running-ml-algorithms-on-the-data" title="Permanent link"></a></h4>
+<p>To start we just ran a decision-tree algorithm using first <em>peakflow</em> and then <em>uscisi</em> labels. This example can be found on <a href="https://colab.research.google.com/drive/1Y8iojcqZ_P1_lUHntUL4h6F46CuPJj0G?usp=sharing">Google Colab</a>. Since each run is sub-sampling data from our files, we ran 10 times and the table below shows our results.</p>
+<table>
+<thead>
+<tr>
+<th>Labels/Run</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peakflow</td>
+<td>0.693</td>
+<td>0.739</td>
+<td>0.739</td>
+<td>0.727</td>
+<td>0.743</td>
+<td>0.728</td>
+<td>0.745</td>
+<td>0.743</td>
+<td>0.746</td>
+<td>0.753</td>
+</tr>
+<tr>
+<td>USC/ISI</td>
+<td>0.812</td>
+<td>0.776</td>
+<td>0.786</td>
+<td>0.795</td>
+<td>0.774</td>
+<td>0.802</td>
+<td>0.776</td>
+<td>0.765</td>
+<td>0.755</td>
+<td>0.784</td>
+</tr>
+</tbody>
+</table>
+<p>These results could be reported by a researcher as follows <strong>Our machine learning algorithm achieved average accuracy of 73.6% on <em>peakflow</em> labels and 78.2% on <em>uscisi</em> labels, on ddos_hackathon-20200511 dataset released by the CLASSNET project.</strong></p>
+<p>You can also replace the decision tree with another classifier, like support vector machines. This yields the results as follows: <em>Average accuracy of 67.6% on </em>peakflow<em> labels and 79.4% on </em>uscisi<em> labels, on ddos_hackathon-20200511 dataset released by the CLASSNET project.</em>* The code is on <a href="https://colab.research.google.com/drive/1w31XaoKz4bmx5wxIYYLnjjkiD6f39V23?usp=sharing">Google Colab</a>.</p>
+<p>In general, USC/ISI labels produce better accuracy, because they are better aligned with the actual traffic rise and fall during attacks.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../support/" class="btn btn-neutral float-right" title="Support">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../contribute/" class="btn btn-neutral" title="Contributing Datasets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../contribute/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../support/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+  <script>var base_url = '..';</script>
+  <script src="../js/theme.js"></script>
+    <script src="../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

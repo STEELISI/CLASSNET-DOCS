@@ -1,0 +1,85 @@
+## Examples of Use
+
+This page provides examples how labeled datasets can be used and why
+having multiple labels for a dataset may benefit researchers.
+
+### DDoS Hackathon 2020
+
+In 2020, we organized a hackathon at ACM Sigcomm to label DDoS attacks
+in FrontRange GigaPop datasets. These datasets can be requested from our
+portal (search for "hackathon"). The datasets contain two types of labels:
+the original labels from Peakflow appliance, and the labels proposed
+by USC/ISI that align start and stop time of attacks to match the rise
+and fall of anomalous traffic, reported by Peakflow. For example, if
+DNS responses to target T started to rise at 10 am, and Peakflow detected
+the attack at 10:05 am, USC/ISI labels would show 10 am as the attack
+start. Since there is no ground truth data for these attacks, it may be
+difficult for researchers to justify use of one set of labels over the other.
+Instead, we hope that researchers may benefit from reporting their results
+over multiple labels.
+
+You can simply read over the first three steps and then run the demo in the
+fourth step in Google Colab. Or, if you want to redo our steps from scratch
+you 
+can request and
+download the hackathon
+dataset from [our COMUNDA portal](https://comunda.isi.edu/artifact/view/2383).
+You will also need labels for this dataset, which can be obtained from
+[this link](https://github.com/STEELISI/COMUNDA/tree/main/ddos_hackathon-20200511) by cloning the repository:
+```
+   git clone https://github.com/STEELISI/COMUNDA.git
+```
+
+#### Step 1: Select training and testing data
+
+For this example we used 1 hour of data on May 12, 2020, i.e., files named
+nfcapd.2020051202* for training and 1 hour of data on Sep 14, 2020, i.e., files
+named nfcapd.2020091423* for testing. We chose to separate training and
+testing data in time to mimic the actual DDoS detection where past traffic
+and attacks inform future detection. The chosen data contains several attacks.
+
+Copy the training data into a folder called `train` and testing data into a
+folder called `test`.
+
+#### Step 2: Labeling the records using event labels
+
+To label the records we ran the following commands (assuming the data and the labels were all stored in one common directory and the command is ran there as well). **Note: they may take up to one hour per command, depending on your disk and
+CPU speed. They each produce 1.3-1.5GB files.**
+
+```
+   perl tag_flows.pl train ddos_hackathon-20200511/provider-peakflow/may > train_peak_labeled.txt
+   perl tag_flows.pl train ddos_hackathon-20200511/uscisi/may > train_uscisi_labeled.txt
+   perl tag_flows.pl test ddos_hackathon-20200511/provider-peakflow/sep > test_peak_labeled.txt
+   perl tag_flows.pl test ddos_hackathon-20200511/uscisi/sep > test_uscisi_labeled.txt  
+```
+
+Note that `tag_flows.pl` can be obtained from [COMUNDA repository](https://github.com/STEELISI/COMUNDA) from folder `tools/usc-isi/netflow-ddos`. 
+
+#### Step 3: Mining the features for learning
+
+To mine the features for learning we ran the following commands:
+
+```
+	perl mine_features.pl train_peak_labeled.txt > train_peak.csv
+	perl mine_features.pl test_peak_labeled.txt > test_peak.csv
+	perl mine_features.pl train_uscisi_labeled.txt > train_uscisi.csv
+	perl mine_features.pl test_uscisi_labeled.txt > test_uscisi.csv
+```
+
+We then saved the csv files online, so they could be used in Google Colab.
+
+#### Step 4: Running ML algorithms on the data
+
+To start we just ran a decision-tree algorithm using first *peakflow* and then *uscisi* labels. This example can be found on [Google Colab](https://colab.research.google.com/drive/1Y8iojcqZ_P1_lUHntUL4h6F46CuPJj0G?usp=sharing). Since each run is sub-sampling data from our files, we ran 10 times and the table below shows our results.
+
+   | Labels/Run |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |  10   |
+   | ---------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+   | Peakflow   | 0.693 | 0.739 | 0.739 | 0.727 | 0.743 | 0.728 | 0.745 | 0.743 | 0.746 | 0.753 |
+   |  USC/ISI   | 0.812 | 0.776 | 0.786 | 0.795 | 0.774 | 0.802 | 0.776 | 0.765 | 0.755 | 0.784 |
+
+
+These results could be reported by a researcher as follows **Our machine learning algorithm achieved average accuracy of 73.6% on *peakflow* labels and 78.2% on *uscisi* labels, on ddos_hackathon-20200511 dataset released by the CLASSNET project.**
+
+You can also replace the decision tree with another classifier, like support vector machines. This yields the results as follows: *Average accuracy of 67.6% on *peakflow* labels and 79.4% on *uscisi* labels, on ddos_hackathon-20200511 dataset released by the CLASSNET project.**
+
+In general, USC/ISI labels produce better accuracy, because they are better aligned with the actual traffic rise and fall during attacks.

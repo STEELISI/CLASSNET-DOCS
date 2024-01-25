@@ -1,225 +1,295 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Updating Labels - COMUNDA Documentation</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-        <link href="../css/extra.css" rel="stylesheet" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Updating Labels";
-        var mkdocs_page_input_path = "labels.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Updating Labels - COMUNDA Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Updating Labels";
+    var mkdocs_page_input_path = "labels.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
+
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
     <a href="" class="icon">
       <!--REPLACE LOGO FILE HERE -->
       <img class="logo" style="float:left" src="img/doc-logo.png"/> 
-      <span class="title">COMUNDA Documentation</span></a><div role="search">
+      <span class="title">COMUNDA Documentation</span></a>
+        <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Overview</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="..">Welcome to COMUNDA</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../account/">Opening Account</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Interacting With Datasets</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../dataset/">Searching, viewing and rating</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../request/">Requesting Datasets</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Updating Labels</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Overview</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Welcome to COMUNDA</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../account/">Opening Account</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Interacting With Datasets</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../dataset/">Searching, viewing and rating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../request/">Requesting Datasets</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Updating Labels</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#correcting-a-few-labels">Correcting a Few Labels</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#github-interaction">Github interaction</a>
+    <li class="toctree-l2"><a class="reference internal" href="#viewing-the-labels">Viewing the labels</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#giving-us-a-url">Giving us a URL</a>
+    <li class="toctree-l2"><a class="reference internal" href="#correcting-existing-labels">Correcting existing labels</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-github-pull-requests">Creating Github Pull Requests</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sending-us-a-url-of-changes">Sending us a URL of changes</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#share-new-labels">Share New Labels</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#github-interaction_1">Github interaction</a>
+    <li class="toctree-l3"><a class="reference internal" href="#example-scenario">Example scenario</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#giving-us-a-url_1">Giving us a URL</a>
+    <li class="toctree-l3"><a class="reference internal" href="#sending-us-a-url">Sending us a URL</a>
     </li>
         </ul>
     </li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contributing Datasets</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Help</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../support/">Support</a>
-                  </li>
-              </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contributing Datasets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../examplesofuse/">Examples of Use</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Help</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../support/">Support</a>
+                    </li>
+                </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">COMUNDA Documentation</a>
-        
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">COMUNDA Documentation</a>
       </nav>
+
+      
       <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
           <li>Interacting With Datasets &raquo;</li>
-      <li>Updating Labels</li>
+        
+      
+    
+    <li>Updating Labels</li>
     <li class="wy-breadcrumbs-aside">
+      
     </li>
   </ul>
+  
   <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+          <div role="main">
+            <div class="section">
               
-                <h2 id="correcting-and-sharing-labels">Correcting and Sharing Labels<a class="headerlink" href="#correcting-and-sharing-labels" title="Permanent link"></a></h2>
-<p>Some datasets in our collections are labeled with security-relevand and/or
-network/relevant labels (e.g., "benign", "attack", etc.) In some cases
-researchers may want to offer a correction to our official label, or a new way
-to assign labels, or even
-to propose a new set of labels to denote new features of flows, hosts or events. Please follow the instructions below to correct or share labels.</p>
-<h3 id="correcting-a-few-labels">Correcting a Few Labels<a class="headerlink" href="#correcting-a-few-labels" title="Permanent link"></a></h3>
-<p>You can make corrections by interacting with Github or by giving us a URL with the corrected labels.</p>
-<h4 id="github-interaction">Github interaction<a class="headerlink" href="#github-interaction" title="Permanent link"></a></h4>
-<ul>
-<li>Check out the public repository for labels:</li>
-</ul>
+                <h2 id="viewing-sharing-and-collaborating-with-dataset-labels">Viewing, Sharing and Collaborating with Dataset Labels<a class="headerlink" href="#viewing-sharing-and-collaborating-with-dataset-labels" title="Permanent link"></a></h2>
+<p>Some datasets in our collections are already labeled with
+security-specific and/or other relevant labels that offer insight into
+each record within a dataset (e.g., "benign", "attack", etc.)
+Researchers may want to contribute their own labels, either as an
+alternative to any existing labels or to create entirely new labels
+denoting new features of flows, hosts, records or events.  Finally, if
+you believe that the existing labels are in error or could be
+improved, feel free to submit a request to update the existing set of
+labels as well.</p>
+<p>To add your contributions to the existing set of labels for a dataset,
+please follow the instructions below to share labels.</p>
+<h3 id="viewing-the-labels">Viewing the labels<a class="headerlink" href="#viewing-the-labels" title="Permanent link"></a></h3>
+<p>The labels for all datasets currently exist within a single GitHub
+repository.  To view and work with them, you will need access to the
+dataset itself (or else the labels will have little value) and the
+label repository as well.  To get the label repository, download the
+repository from github:</p>
 <pre><code>git clone https://github.com/STEELISI/COMUNDA.git
 </code></pre>
+<h3 id="correcting-existing-labels">Correcting existing labels<a class="headerlink" href="#correcting-existing-labels" title="Permanent link"></a></h3>
+<p>You can offer corrections to the existing labels using GitHub pull
+requests or by sending us a URL with your corrected labels.</p>
+<h4 id="creating-github-pull-requests">Creating Github Pull Requests<a class="headerlink" href="#creating-github-pull-requests" title="Permanent link"></a></h4>
 <ul>
-<li>Find the folder where the affected dataset is, and then find the folder
-where our official labels reside</li>
-<li>Fork a new branch:</li>
+<li>
+<p>Begin by forking the main repository on github using the <code>Fork</code>
+  button on the website for the COMUNDA repository:</p>
+<p>https://github.com/STEELISI/COMUNDA.git</p>
+</li>
+<li>
+<p>Then clone (check out) your fork: </p>
+<p>git clone https://github.com/YOURACCOUNT/COMUNDA.git</p>
+</li>
+<li>
+<p>Find the folder where the dataset you wish to offer corrections for
+is, and within that find the folder where our official labels reside</p>
+</li>
+<li>
+<p>Create a <code>git</code> branch to save your changes in:</p>
+<p>git checkout -b your-chosen-name</p>
+</li>
+<li>
+<p>Mark (add) any changed files you wish to submit for inclusion</p>
+<p>git add [changed-files]</p>
+</li>
+<li>
+<p>Commit and push</p>
+<p>git commit -m 'some message here'
+git push origin your-chosen-name</p>
+</li>
+<li>
+<p>Finally, go to <a href="https://github.com/STEELISI/COMUNDA">COMUNDA Github</a>
+and submit a pull request referencing the branch that you just pushed
+to your own forked copy.  Make sure to provide a detailed explanation
+in your request about why you are suggesting the corrections you made.</p>
+</li>
 </ul>
-<pre><code>git checkout -b your-chosen-name
-</code></pre>
+<h4 id="sending-us-a-url-of-changes">Sending us a URL of changes<a class="headerlink" href="#sending-us-a-url-of-changes" title="Permanent link"></a></h4>
+<p>Alternatively, if you are unfamiliar with using git and GitHub, you
+may send us a request via the COMUNDA interface.  On the <a href="https://comunda.isi.edu">COMUNDA Web
+page</a> log in and then click on the <em>Label
+Datasets</em> link on the left. This will enable you to provide us a URL
+with the materials and changes that describe your label correction.
+Please make sure to provide:</p>
 <ul>
-<li>Apply your changes</li>
-<li>Commit and push</li>
-</ul>
-<pre><code>git commit -a -m 'some message here' &amp;&amp; git push origin your-chosen-name
-</code></pre>
-<ul>
-<li>Go to <a href="https://github.com/STEELISI/COMUNDA">COMUNDA Github</a> and submit a pull request. Make
-sure to offer a detailed explanation in your request about the reasoning
-for the corrections you suggested.</li>
-</ul>
-<h4 id="giving-us-a-url">Giving us a URL<a class="headerlink" href="#giving-us-a-url" title="Permanent link"></a></h4>
-<p>On <a href="https://comunda.isi.edu">COMUNDA Web page</a> log in and then follow <em>Label Datasets</em> link on
-the left. This will enable you to provide us a URL with materials describing your label correction.
-Please make sure to provide at the URL site:</p>
-<ul>
-<li>Reason for correction</li>
-<li>File with corrected labels and unique record IDs (ideally corrected labels would be in the format that the original labels were)</li>
+<li>Your reasoning for the  correction</li>
+<li>A file with corrected labels and unique record IDs (ideally
+  corrected labels would be in the format that the original labels)</li>
 </ul>
 <h3 id="share-new-labels">Share New Labels<a class="headerlink" href="#share-new-labels" title="Permanent link"></a></h3>
-<p>You can make corrections by interacting with Github or by giving us a URL with the new labels.</p>
-<h4 id="github-interaction_1">Github interaction<a class="headerlink" href="#github-interaction_1" title="Permanent link"></a></h4>
-<ul>
-<li>Check out the public repository for labels:</li>
-</ul>
-<pre><code>git clone https://github.com/STEELISI/COMUNDA.git
-</code></pre>
-<ul>
-<li>
-<p>Find the folder where the affected dataset is, and cd into it</p>
-</li>
-<li>
-<p>Fork a new branch:</p>
-</li>
-</ul>
-<pre><code>git checkout -b your-chosen-name
-</code></pre>
-<ul>
-<li>Create a new folder
-for your labels. Name that folder in a way that denotes your or your research
-group's identity and the purpose of the labels, e.g., JMirkovic-ddos-attack</li>
-<li>
+<p>For creating new labels, use the same process as described in the
+above instructions for correcting labels.  But, instead of modifying
+existing files, create an entirely new folder instead for your newly
+created labels.  Name this new folder in a way that denotes your or
+your research group's identity and the purpose of the labels (e.g.,
+JMirkovic-ddos-attack).</p>
 <p>Place the following information and files into the folder:</p>
+<ul>
+<li>In a <code>README.md</code> file include:<ul>
+<li>your name and contact information.</li>
+<li>The label format used in your labeling files. Make sure to
+  explain the meaning and purpose for each label.</li>
+</ul>
 </li>
-<li>
-<p>Your name and contact information in README.md file</p>
+<li>The labels you want to contribute either in the form of a file
+  containing the labels, or as a program or script to execute for
+  generating the labels given the dataset files.</li>
+<li>Provide instructions and/or examples how to use the labels or run
+  your program or script and the inputs it needs.</li>
+</ul>
+<p>Finally, push your forked GitHub branch to github (<code>git push origin
+your-chosen-name</code>) and then create a pull request at <a href="https://github.com/STEELISI/COMUNDA">COMUNDA
+Github</a> as described above.  Make
+sure to offer a detailed explanation in your request about the
+reasoning for the labels you suggested and the labeling algorithm you
+implemented.</p>
+<h5 id="example-scenario">Example scenario<a class="headerlink" href="#example-scenario" title="Permanent link"></a></h5>
+<p>For example, if I were to label DDoS attacks on a large dataset
+containing Netflow records, I may choose to have labels in the format
+of attack events that include the start time of attack (in UTC), the
+stop time of attack, the target, the type of attack or the attack
+traffic's signature. I would specify the format of any files
+containing this information in a newly created <code>README.md</code> file, along
+with any other pertinent information. I would then place the events
+into a label file (potentially a CSV, JSON or tab-separated format). I
+might also provide a program or script to read the Netflow records and
+create a label file that's output would include a unique record ID
+(for example timestamp,sourceIP,sourceport,destIP,destport) and an
+associated label (e.g. "attack" or "ddos"). I would put the full
+example of the command line needed for running my program in the
+<code>README.md</code> file.</p>
+<h4 id="sending-us-a-url">Sending us a URL<a class="headerlink" href="#sending-us-a-url" title="Permanent link"></a></h4>
+<p>You may also send us a URL containing all of the information needed
+for a new set of dataset labels.</p>
+<p>To do so, log into the <a href="https://comunda.isi.edu">COMUNDA Web page</a> and
+click on the <em>Label Datasets</em> link on the left-hand side. This will
+provide you a form to fill out with a URL pointing to your materials
+to download, and a textbox to please a description in that describes
+your proposed labels.  Like the above, please provide:</p>
+<ul>
+<li>In a <code>README.md</code> file include:<ul>
+<li>your name and contact information.</li>
+<li>The label format used in your labeling files. Make sure to
+  explain the meaning and purpose for each label.</li>
+</ul>
 </li>
-<li>The label format in README.md file. Make sure to explain each label's meaning.</li>
-<li>The label file if any (sometimes the labeling program may take input needed to label, without the label file)</li>
-<li>The program, which can be ran on the given dataset to produce some unique record ID and the desired label. This program may take input from command line or take label file as input.</li>
-<li>Provide examples how to run the program (and specific inputs) to label the given dataset</li>
-</ul>
-<p>For example, if I were to label DDoS attacks on the large dataset containing Netflow records, I may choose to have labels in the format of attack events, e.g., start time of attack in UTC, stop time of attack in UTC, target, type of attack or attack traffic's signature, I would specify this format in the README.md file, and list the types of attacks I can label. I would place the events into the label file. I would also provide a program, which reads Netflow records and my label file, and prints a unique record ID (timestamp-sourceIP-sourceport-destIP-destport) and the label out. I would put the full example of the command line needed to run my program in README.md</p>
-<ul>
-<li>Commit and push</li>
-</ul>
-<pre><code>git commit -a -m 'some message here' &amp;&amp; git push origin your-chosen-name
-</code></pre>
-<ul>
-<li>Go to <a href="https://github.com/STEELISI/COMUNDA">COMUNDA Github</a> and submit a pull request. Make
-sure to offer a detailed explanation in your request about the reasoning
-for the labels you suggested and the labeling algorithm you implemented.</li>
-</ul>
-<h4 id="giving-us-a-url_1">Giving us a URL<a class="headerlink" href="#giving-us-a-url_1" title="Permanent link"></a></h4>
-<p>On <a href="https://comunda.isi.edu">COMUNDA Web page</a> log in and then follow <em>Label Datasets</em> link on
-the left. This will enable you to provide us a URL with materials describing your new labels.
-Please make sure to provide at the URL site:</p>
-<ul>
-<li>Your name and contact information in README.md file</li>
-<li>The label format in README.md file. Make sure to explain each label's meaning.</li>
-<li>The label file if any (sometimes the labeling program may take input needed to label, without the label file)</li>
-<li>The program, which can be ran on the given dataset to produce some unique record ID and the desired label. This program may take input from command line or take label file as input. If label file lists each record's unique ID and the label, then the program can be omitted.</li>
-<li>Provide examples how to run the program (and specific inputs) to label the given dataset. Again, if label file fully specifies the label for each record, the examples can be omitted</li>
+<li>The labels you want to contribute either in the form of a file
+  containing the labels, or as a program or script to execute for
+  generating the labels given the dataset files.</li>
+<li>Provide instructions and/or examples how to use the labels or run
+  your program or script and the inputs it needs.</li>
 </ul>
               
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../request/" class="btn btn-neutral float-left" title="Requesting Datasets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
         <a href="../contribute/" class="btn btn-neutral float-right" title="Contributing Datasets">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../request/" class="btn btn-neutral" title="Requesting Datasets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
     </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-          
+      
         </div>
       </div>
 
@@ -227,16 +297,16 @@ Please make sure to provide at the URL site:</p>
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../request/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../contribute/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../request/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../contribute/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
 </div>
   <script>var base_url = '..';</script>
   <script src="../js/theme.js"></script>
