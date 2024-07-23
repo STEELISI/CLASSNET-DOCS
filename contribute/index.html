@@ -68,11 +68,11 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Contributing Datasets</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-sharing">Mechanisms for Sharing</a>
+    <li class="toctree-l2"><a class="reference internal" href="#request-approvals">Request Approvals</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-researcher-access-approval">Mechanisms for Researcher Access Approval</a>
+    <li class="toctree-l2"><a class="reference internal" href="#hosting-datasets">Hosting Datasets</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mechanisms-for-data-access">Mechanisms for Data Access</a>
+    <li class="toctree-l2"><a class="reference internal" href="#provisioning-data-acccess">Provisioning Data Acccess</a>
     </li>
     </ul>
                     </li>
@@ -122,26 +122,103 @@
               
                 <h2 id="contributing-datasets">Contributing Datasets<a class="headerlink" href="#contributing-datasets" title="Permanent link"></a></h2>
 <p>If you or your organization have datasets, which you would like to distribute
-via our portal, please contact us via <a href="mailto:comunda-ops@googlegroups.com">comunda-ops@googlegroups.com</a>.</p>
-<h3 id="mechanisms-for-sharing">Mechanisms for Sharing<a class="headerlink" href="#mechanisms-for-sharing" title="Permanent link"></a></h3>
-<p>We can host only your metadata for each dataset, or we can host your dataset and its metadata.
-You would provide the Data Use Agreement (DUA), outlining acceptable use of your
-dataset by researchers.</p>
-<h3 id="mechanisms-for-researcher-access-approval">Mechanisms for Researcher Access Approval<a class="headerlink" href="#mechanisms-for-researcher-access-approval" title="Permanent link"></a></h3>
-<p>Once a researcher submits the request for a dataset, and the signed DUA, that request
-is routed for approval via email. You can decide who should be in charge of request
-approvals, e.g., someone from CLASSNET project or someone from your organization. You can
-also designate multiple approvers. You can further decide what is <em>your criteria</em> for
-approval, e.g., do you want to allow access only to researchers from some countries, or
-only to faculty but not students, etc. Once the request is approved, the researcher
-will receive an email with instructions how to access data.</p>
-<h3 id="mechanisms-for-data-access">Mechanisms for Data Access<a class="headerlink" href="#mechanisms-for-data-access" title="Permanent link"></a></h3>
+via our portal, please contact us via
+<a href="mailto:comunda-ops@googlegroups.com">comunda-ops@googlegroups.com</a>.
+Our process to publish a new dataset requires a number of steps:</p>
+<ol>
+<li>Create an account on COMUNDA if you do not have one yet</li>
+<li>Write a Data Use Agreement (DUA) that incorporates usage
+   requirements that outlines acceptable use of your dataset by
+   researchers.</li>
+<li>Write to 
+   <a href="mailto:comunda-ops@googlegroups.com">comunda-ops@googlegroups.com</a>
+   with a request to allow COMUNDA to publish your datasets. In this
+   E-Mail:</li>
+<li>provide the DUA you intend to use</li>
+<li>specify if you want COMUNDA to
+   host your datasets or just to host the datasets' metadata.</li>
+<li>specify who should approve requests for dataset access - someone at your organization or
+   COMUNDA staff</li>
+<li>Once your contributor account is approved (this may take several days), 
+   <a href="https://comunda.isi.edu/contributeDatasets">submit a new dataset publication request</a>
+   through the COMUNDA portal.  Be ready to answer the metadata questions
+   listed below.  Once submitted, a dataset's record should appear online within an hour.</li>
+<li>Once published, if your organization requested to handle dataset requests, please
+   attend to them promptly. 
+   Notifications will be sent to approving parties via E-Mail.</li>
+</ol>
+<h3 id="request-approvals">Request Approvals<a class="headerlink" href="#request-approvals" title="Permanent link"></a></h3>
+<p>Data providers will typically approve requests for data sharing, but COMUNDA staff is willing to
+take over data approver role or to help in vetting researchers, if you request this. An approver
+will receive automated emails containing the signed DUA, and details about the requesting party's
+name, affiliation and intended use of data. Data providers can request additonal information about 
+requesting parties, such as citizenship. An approver approves or denies data access request. 
+Providers can decide what their
+criteria is for approval, such as whether to allow access only from
+certain regions, or only from university faculty appointments, etc.
+If approved,
+data access will be provisioned to the requesting party, usually via direct email from the approver.
+The provisioning process is only automated if COMUNDA hosts your dataset and you opted for download 
+access mechanism. Otherwise, the approver must manually email the requesting party with dataset access
+instructions.</p>
+<h3 id="hosting-datasets">Hosting Datasets<a class="headerlink" href="#hosting-datasets" title="Permanent link"></a></h3>
+<p>COMUNDA will typically only host your dataset's metadata (title,
+description, etc) while the actual dataset remains with you. COMUNDA we can also host your entire dataset in
+addition to its metadata if you request this.</p>
+<h3 id="provisioning-data-acccess">Provisioning Data Acccess<a class="headerlink" href="#provisioning-data-acccess" title="Permanent link"></a></h3>
 <p>Currently we support three types of data access:</p>
 <ul>
-<li>download - researcher obtains a link to download the dataset</li>
-<li>onsite - researcher obtains login credentials to log into a machine, usually at the data
-provider's site, to access and process the data</li>
-<li>cloud - researcher obtains information how to access the dataset on a cloud</li>
+<li>download - the researcher will obtain a link from request approver to download
+  the dataset.</li>
+<li>onsite - the researcher will obtain login credentials for a system
+  that has access to the dataset.  This is usually at the data
+  provider's site.</li>
+<li>cloud - the researcher will obtain information about how to access
+  the dataset within a public cloud provider's infrastructure.</li>
+</ul>
+<h2 id="dataset-metadata-expected-during-submission">Dataset Metadata Expected During Submission<a class="headerlink" href="#dataset-metadata-expected-during-submission" title="Permanent link"></a></h2>
+<p>The following lists the fields that must be filled out during new dataset
+submission:</p>
+<ul>
+<li>dataset name: a short name for the dataset</li>
+<li>brief description: a short sentence or two describing the dataset</li>
+<li>detailed description: a paragraph that describes the dataset and how it was collected</li>
+<li>the dataset "class": describing if the dataset is restricted, quasi-restricted, classified, or unclassified. This field has only internal use. If you want to vet researchers and then provide access to those you approve of, you would choose quasi-restricted.</li>
+<li>commercial use: whether the dataset can be used for commercial
+  purposes</li>
+<li>publication review requirements: whether any publications making use
+  of the dataset must be reviewed by the dataset provider before
+  publication.</li>
+<li>availability: when did the dataset become available, and when does
+  access cease</li>
+<li>in progress: whether or not the dataset is part of an ongoing,
+  continually updating collection or whether collection has ended</li>
+<li>collection date ranges: when the collection start and stop</li>
+<li>dataset size: what is the size of the dataset in question</li>
+<li>indefinite use: whether or not the dataset can be retained and used
+  indefinitely</li>
+<li>keywords: what keywords would be useful for helping researchers find
+  your dataset</li>
+<li>format: what format is your dataset stored in? </li>
+<li>anonymization: was the dataset anonymized in some way and how</li>
+<li>access type: how can the data be accessed upon approval (https,
+  rsync, google BigQuery, or other)</li>
+<li>provider name: The name of the providing entity</li>
+<li>access duration: once approved, how long will the user be able to
+  access the dataset</li>
+<li>Grouping ID: if the dataset is part of ongoing collection and you plan to publish
+snapshots of the collection periodically, please use this field to "group" all datasets
+in the collection together</li>
+<li>Data Use Agreement: the DUA to be applied</li>
+<li>IRB required: whether or not an IRB approval is required for use. We expect that fully anonymized datasets will not
+require IRB approval, while those that are not anonymized may require IRB approval. If you select this field, researchers
+will have to ask for and obtain an IRB approval from their organization <strong>before</strong> they can request your dataset</li>
+<li>Link to dataset: whether the data will be downloadable or will
+  require on-site access with an account</li>
+<li>README: a markdown, text or html README file that fully describes
+  the dataset.  Note that this will be converted to text when archived
+  in the COMUNDA catalog -- fancy formatting is not possible at this
+  time.</li>
 </ul>
               
             </div>
